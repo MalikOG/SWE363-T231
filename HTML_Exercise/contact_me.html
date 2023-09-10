@@ -1,0 +1,63 @@
+<!doctype html>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Abdulmalik Almadhi">
+    <meta name="description" content="A page providing contact information for anyone intereted in contacting me.">
+    <meta name="keywords" content="Linkedin, Email, Twitter, Phone">
+    <title>Contact Me</title>
+  </head>
+
+  <h1>Contact Me</h1>
+      
+  <!-- Writing up author address using Address Tag -->
+  <address>
+      Contact the Author: <br />
+
+      Email:
+      <a href="mailto:Abdulmalikmeshari@gmail.com">Abdulmalikmeshari@gmail.com</a> <br>
+      <!-- Phone Number, which I will most likely not write up -->
+      Phone:
+      <a href="+966 55XX XXXXX">+966 55XX XXXXX</a> <br>
+      <!-- Will create twitter soon inshallah -->
+      Twitter:
+      <a href="https://twitter.com/">Twitter</a> <br>
+      Linkedin: 
+      <a href="https://www.linkedin.com/in/abdulmalik-almadhi-234610235/">Linkedin</a>
+  </address>    
+      
+  <!-- Form to directly send email-->
+  <form action="confirmation.html" method="get" class="form-example">
+      <h4>To Directly Email Me, Use This Form:</h4>
+
+      <!-- Name text input -->
+      <div class="form-example">
+        <label for="name">Enter your name: </label>
+        <input type="text" name="name" id="name" required />
+      </div>
+
+      <!-- Email input -->
+      <div class="form-example">
+        <label for="email">Enter your email: </label>
+        <input type="email" name="email" id="email" required />
+      </div>
+
+      <!-- Email body input -->
+      <div class="form-example">
+          <label for="mail">Enter your mail:</label><br>
+          <textarea name="mail" id="mail" cols="30" rows="10"></textarea>
+      </div>      
+      
+      <!-- Button -->
+      <div class="form-example">
+        <input type="submit" value="Send" action="confirmation.html"/>
+      </div>
+  </form>
+
+
+  <h4><p> <a href="homepage.html">Homepage</a></p></h4>
+  <!-- Future Cover Page: No CSS implemented until Professor Says so. -->
+  <img src="cover_page.jpeg" alt="">
+</html>
