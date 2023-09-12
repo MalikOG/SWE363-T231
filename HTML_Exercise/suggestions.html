@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Abdulmalik Almadhi">
+    <meta name="description" content="Any resource suggestions by viewers.">
+    <meta name="keywords" content="Suggest, Resource, AI">
+    <title>AI Resource Suggestion</title>
+</head>
+
+
+    
+
+<body style="text-align: center;">
+    <h1>AI Resource Suggestion</h1>
+    <form action="suggestion_confirmation.html" method="get">
+
+        <!-- Text inputs with Autocomplete-->
+        <label for="firstName">First Name:</label>
+        <input name="firstName" id="firstName" type="text" autocomplete="given-name" placeholder="First Name" />
+
+        <br><br>
+
+        <label for="lastName">Last Name:</label>
+        <input name="lastName" id="lastName" type="text" autocomplete="family-name" placeholder="Last Name"/>
+
+        <br><br>
+
+        <!-- Radio Input -->
+        <label for="radio">Is this resource related to AI?</label>
+        <label><input type="radio" name="radio" value="Yes">Yes</label>
+        <label><input type="radio" name="radio" value="No">No</label>
+
+        <br><br>
+
+        <label for="URL">Enter Link to Resource</label>
+        <label><input type="url" name="URL" placeholder="Enter URL" autocomplete="url"></label>        
+
+        <br><br>
+
+        <!-- Datalist Input -->
+        <label for="domain-list">What Area in AI?</label>
+        <label><input list="AI-domains" name="domain-list" placeholder="AI Domain"></label>
+
+        <datalist id="AI-domains">
+            <option value="Machine Learning"></option>
+            <option value="Computer Vision"></option>
+            <option value="Natural Language Processing"></option>
+            <option value="Robotics"></option>
+            <option value="Gaming"></option>
+        </datalist>
+
+        <br><br>
+
+        <!-- File Input -->
+        <label for="resource-file">Send Resource in File</label>
+        <label><input type="file" name="resource-file"></label>
+        
+        <br><br>
+
+        <!-- Button Input -->
+        <label for="Submit">Submit Suggestion</label>
+        <label><input type="submit" value="Submit" name="Submit" action="suggestion_confirmation.html"/></label>
+    </form>
+
+    <footer>
+        <small><a href="homepage.html">Homepage</a>, <a href="about_me.html">About me</a>, 
+            <a href="contact_me.html">Contact me, <a href="my_notes.html">Notes</a>,
+            <a href="ios_preview.html">IOS Preview</a>
+            <br>
+        &copy; Copyright 2023, Abdulmalik Almadhi</small>
+    </footer>
+</body>
+</html>
