@@ -1,0 +1,63 @@
+/* Adding DM Sans Font */
+@font-face {
+    font-family: DM-Sans;
+    src: url(./DM_Sans/DMSans-VariableFont_opsz\,wght.ttf);
+  }
+
+body {
+    background-color: #222222;
+    color: 	#f9f9f9;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+h1, h2, h3 {
+    text-transform: uppercase;
+    font-family: DM-Sans;
+}
+
+th {
+    text-transform: uppercase;
+}
+
+a {
+    color: greenyellow
+}
+em {
+    background-color:blue;
+}
+
+footer {
+    border-top: 1px solid #f9f9f9;
+    padding-top: 10px;
+}
+
+nav {
+    border-bottom: 1px solid #f9f9f9;;
+}
+
+.pgs ol {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.pg{
+    display: inline-block;
+}
+
+.pg a::after {
+    display: inline-block;
+    color: #f9f9f9;
+    content: '>';
+    font-size: 80%;
+    font-weight: bold;
+    padding: 0 3px;
+}
+
+.top {
+    background-color: #b76e79;
+}
+
+#the_most_important {
+    text-transform:uppercase;
+    background-color:#FFD700;
+}
+
