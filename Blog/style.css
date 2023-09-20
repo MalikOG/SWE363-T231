@@ -109,9 +109,9 @@ tbody tr:nth-child(odd){
     background-color: gray;
 }
 
-/* Any anchor  */
-a:hover{
-    cursor: pointer;
+/* Any anchor not NAV have pointer(Default) and NAV is default pointer */
+NAV a{
+    cursor: default;
 }
 
 /* Selection highlight is purple color */
