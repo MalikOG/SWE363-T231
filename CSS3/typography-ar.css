@@ -1,6 +1,6 @@
 @font-face {
-    font-family: DM-Sans;
-    src: url(./Fonts/Noto_Sans_Arabic/NotoSansArabic-VariableFont_wdth\,wght.ttf);
+    font-family: Noto Sans Arabic;
+    src: url(../Fonts/Noto_Sans_Arabic/NotoSansArabic-VariableFont_wdth\,wght.ttf);
 }
 body {
     font-family: Noto Sans Arabic;
