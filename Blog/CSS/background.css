@@ -13,18 +13,10 @@ footer {
     background-color: #333;
 }
 
-a {
-    color: #BB86FC;
-}
-div > a {
-    font-size: 25px;
-    text-decoration: none;
-}
-
 #img {
     background-image: url(../imgs/Dead_Astronomer.jpeg);
-    width: 300px;
-    height: 300px;
+    width: 172px;
+    height: 97px;
     justify-content: center;
     background-repeat: 0;
 }

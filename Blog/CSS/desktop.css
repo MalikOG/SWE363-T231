@@ -1,0 +1,54 @@
+
+@media screen and (min-width: 770px){
+    h1 {
+        font-size: 96px;
+    }
+    h2 {
+        font-size: 60px;
+    }
+    h3 {
+        font-size: 48px;
+    }
+    h4 {
+        font-size: 34px;
+    }
+    h5 {
+        font-size: 24px;
+    }
+    h6 {
+        font-size: 20px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+    :root {
+        --bar-width: 60px;
+        --bar-height: 8px;
+        --hamburger-gap: 6px;
+    }
+
+    img {
+        width: 344px;
+        height: 194px;
+    }
+
+    .watermark::after {
+        background-size: 100px 100px;
+    }
+
+    input[type="text"],
+    input[type="url"],
+    input[list] {
+        padding: 10px;
+        margin: 10px 0;
+    }
+
+    button, input[type="button"], 
+    input[type="submit"] {
+        width: 120px;
+        height: 54px;
+        font-size: 18px;
+        border-radius: 12px;
+    }
+}

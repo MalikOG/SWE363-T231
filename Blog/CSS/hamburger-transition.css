@@ -11,9 +11,9 @@ body {
 }
 
 :root {
-    --bar-width: 60px;
-    --bar-height: 8px;
-    --hamburger-gap: 6px;
+    --bar-width: 30px;
+    --bar-height: 4px;
+    --hamburger-gap: 3px;
     --foreground: #f9f9f9;
     --background: #333;
     --hamburger-margin: 8px;
@@ -77,6 +77,7 @@ body {
     min-width: 50rem;
     max-height: 5vh;
     background-color: var(--background);
+    z-index: 1;
 }
 
 .choice { 
@@ -86,10 +87,16 @@ body {
     min-width: 100rem;
     max-height: 300vh;
     background-color: var(--background);
+    z-index: 9999;
 }
 
 .hamburger-menu:has(input:checked) + .sidebar > nav > .choice {
     translate: 0;
+}
+
+div > a {
+    font-size: 15px;
+    text-decoration: none;
 }
 
 #choice_2 {
@@ -100,4 +107,7 @@ body {
 }
 #choice_4 {
     transition-delay: 90ms;
+}
+#choice_5 {
+    transition-delay: 120ms;
 }
