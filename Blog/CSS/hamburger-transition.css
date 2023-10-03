@@ -1,0 +1,103 @@
+*, 
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+header {
+    display: flex;
+}
+body {
+    margin: 0;
+}
+
+:root {
+    --bar-width: 60px;
+    --bar-height: 8px;
+    --hamburger-gap: 6px;
+    --foreground: #f9f9f9;
+    --background: #333;
+    --hamburger-margin: 8px;
+    --animation-timing: 500ms ease-in-out;
+    --hamburger-height: calc(var(--bar-height) * 3 + var(--hamburger-gap) * 2)
+
+}
+.hamburger-menu, .sidebar {
+    position: fixed;
+}
+.hamburger-menu {
+    --x-width: calc(var(--hamburger-height)* 1.41421356237);
+    display: flex;
+    flex-direction: column;
+    gap: var(--hamburger-gap);
+    width: max-content;
+    top: var(--hamburger-margin);
+    left: var(--hamburger-margin);
+    z-index: 2;
+    cursor: pointer;
+
+}
+
+.hamburger-menu::before,
+.hamburger-menu::after,
+.hamburger-menu input {
+    content: "";
+    width: var(--bar-width);
+    height: var(--bar-height);
+    background-color: var(--foreground);
+    border-radius: 9999px;
+    transform-origin: left-center;
+    transition: opacity var(--animation-timing);
+}
+
+.hamburger-menu input {
+    appearance: none;
+    padding: 0;
+    margin: 0;
+    outline: none;
+    pointer-events: none;
+
+}
+
+
+.hamburger-menu:has(input:checked)::before{
+    opacity: 0.6;
+}
+
+.hamburger-menu:has(input:checked)::after{
+    opacity: 0.6;
+}
+
+.hamburger-menu input:checked {
+    opacity: 0.6;
+}
+
+.sidebar {
+    padding-top: calc(var(--hamburger-height) 
+    + var(--hamburger-margin) + 0.5rem);
+    min-width: 50rem;
+    max-height: 5vh;
+    background-color: var(--background);
+}
+
+.choice { 
+    transition: translate var(--animation-timing);
+    translate: -100%;
+    padding: 0.5rem 1rem;
+    min-width: 100rem;
+    max-height: 300vh;
+    background-color: var(--background);
+}
+
+.hamburger-menu:has(input:checked) + .sidebar > nav > .choice {
+    translate: 0;
+}
+
+#choice_2 {
+    transition-delay: 30ms;
+}
+#choice_3 {
+    transition-delay: 60ms;
+}
+#choice_4 {
+    transition-delay: 90ms;
+}

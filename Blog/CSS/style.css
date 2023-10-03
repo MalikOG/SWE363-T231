@@ -1,0 +1,37 @@
+#opposites {
+    display: flex;
+    justify-content: space-around;
+}
+
+
+#logos {
+    justify-content: space-around;
+}
+
+.logo {
+    width: 3%;
+    height: 3%;
+}
+
+.no_bullets {
+    list-style-type: none;
+}
+
+.no_bullets > li {
+    margin-bottom: 15px;
+}
+
+.no_bullets > li > a{
+    text-decoration: none ;
+    font-size: 20px;
+    
+}
+
+.course {
+    margin-bottom: 10px;
+}
+
+.date {
+    float: right;
+    width: 600px;
+}

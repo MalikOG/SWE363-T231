@@ -10,33 +10,54 @@
   <meta name="author" content="Abdulmalik Almadhi">
   <meta name="description" content="The homepage of my website.">
   <meta name="keywords" content="Homepage">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="CSS/typography.css">
+  <link rel="stylesheet" href="CSS/background.css">
+  <link rel="stylesheet" href="CSS/hamburger-transition.css">
+  <link rel="stylesheet" href="button-transition.css">
+  <link rel="stylesheet" href="CSS/loader.css">
   <title>Homepage</title>
-  
 </head>
 
+
 <body>
-  <nav class="pgs">
-    <ol>
-      <li class="pg">Homepage</li>
-    </ol>
-  </nav>
 
-  <h1>Homepage</h1>
-
-
-  <p>This page will be the future homepage that links to different pages. This website will be about me, 
-    where I will introduce people to myself.</p>
-    
-    
-    <footer>
-      <small><a href="about_me.html">About me</a>, <a href="contact_me.html">Contact me, 
-        <a href="my_notes.html">Notes</a>, <a href="suggestions.html">Suggest Me</a>, 
-        <a href="ios_preview.html">IOS Preview</a><br>
-      &copy; Copyright 2023, Abdulmalik Almadhi</small>
-    </footer>
-    
-    
+  <div class="loader"><div></div><div></div><div></div></div>  
+  <div class="content show-content">
+    <header>
+      <label class="hamburger-menu">
+        <input type="checkbox">
+    </label>
+    <aside class="sidebar">
+        <nav>
+            <div class="choice" id="choice_1"><a href="about_me.html">About me</a></div>
+            <div class="choice" id="choie_2"><a href="contact_me.html">Contact me</div>
+            <div class="choice" id="choice_3"><a href="my_notes.html">Notes</a></div>
+            <div class="choice" id="choice_4"><a href="suggestions.html">Suggest Me</a></div>
+        </nav>
+    </aside>  
+      <h1>Homepage</h1> 
+      
+    </header>
+    <section>
+      <p>This page will be the future homepage that links to different pages. This website will be about me, 
+        where I will introduce people to myself.</p>
+      <div id="img">
+        <p>A.M</p>
+      </div>
+    </section>
+    <section id="EX1">
+      <p>Section to be displayed to the right</p>
+    </section>
+    <button>Display</button>
+      <footer> 
+        <div id="logos">
+                <a href="AbdulmalikMeshari@gmail.com"><img class="logo" src="imgs/Gmail-Icon.png"></a>
+                <a href="https://www.linkedin.com/in/abdulmalik-almadhi-234610235"><img class="logo" src="imgs/Linkedin-Icon.png"></a>
+                <a href="twitter.com"><img class="logo" src="imgs/X-Icon.png"></a>
+            </div>
+            <span><small>&copy; 2023 Abdulmalik Almadhi</small></span>
+      </footer>
+  </div>
 </body>
 
 

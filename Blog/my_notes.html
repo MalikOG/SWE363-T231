@@ -6,39 +6,67 @@
         <meta name="author" content="Abdulmalik Almadhi">
         <meta name="description" content="A page showcasing my written notes till my graduation.">
         <meta name="keywords" content="LaTeX, PDF, Notes">
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="CSS/typography.css">
+        <link rel="stylesheet" href="CSS/background.css">
+        <link rel="stylesheet" href="CSS/hamburger-transition.css">
+        <link rel="stylesheet" href="CSS/loader.css">
+        <link rel="stylesheet" href="CSS/style.css">
         <title>Notes</title>
     </head>
 
 
-    <body>
-        <nav class="pgs">
-            <ol>
-              <li class="pg"><a href="homepage.html">Homepage</a></li>
-              <li class="pg">Notes</li>
-            </ol>
-        </nav>
 
+    <body>
+        <div class="loader"><div></div><div></div><div></div></div>  
+        <div class="content show-content">
+        <header>
+        <label class="hamburger-menu">
+            <input type="checkbox">
+        </label>
+        <aside class="sidebar">
+            <nav>
+                <div class="choice" id="choice_1"><a href="about_me.html">About me</a></div>
+                <div class="choice" id="choie_2"><a href="contact_me.html">Contact me</div>
+                <div class="choice" id="choice_3"><a href="my_notes.html">Notes</a></div>
+                <div class="choice" id="choice_4"><a href="suggestions.html">Suggest Me</a></div>
+            </nav>
+        </aside>
         <h1>My College Notes</h1>
-        <p>This page will be populated with my notes. I will populate it soon inshallah</p>
-        <ul>
-            <li><h3>SWE363</h3></li>
-            <li><h3>SWE387</h3></li>
-            <ul>
-                <li><a href="../../../SWE387/W1/Notes.org">Lecture 1</a></li>
-                <li><a href="../../../SWE387/CH02/Notes.org">Lecture 1</a></li>
+        </header>
+
+        <section>
+            <h3 class="course">BUS200</h3>
+            <ul class="no_bullets">
+                <li>
+                    <a href="Notes/BUS200/CH01.pdf"> Chapter 1</a> 
+                    <span class="date">21/9/2023</span>
+                </li>
+                <li>
+                    <a href="Notes/BUS200/CH02.pdf"> Chapter 2</a>
+                    <span class="date">25/9/2023</span>
+                </li>
+                <li>
+                    <a href="Notes/BUS200/CH03-Note.pdf"> Chapter 3</a>
+                    <span class="date">30/9/2023</span>
+                </li>
+                <li>
+                    <a href="Notes/BUS200/CH8-Note.pdf"> Chapter 8</a>
+                    <span class="date">2/10/2023</span>
+                </li>
             </ul>
-            
-            <li><h3>BUS200</h3></li>
-            <li><h3>CGS392</h3></li>
-        </ul>
+        </section>
         
+
+
         <footer>
-            <small><a href="homepage.html">Homepage</a>, <a href="about_me.html">About me</a>, 
-                <a href="contact_me.html">Contact me, <a href="suggestions.html">Suggest Me</a>,
-                <a href="ios_preview.html">IOS Preview</a>
-                <br>
-            &copy; Copyright 2023, Abdulmalik Almadhi</small>
+            <div id="logos">
+                <a href="AbdulmalikMeshari@gmail.com"><img class="logo" src="imgs/Gmail-Icon.png"></a>
+                <a href="https://www.linkedin.com/in/abdulmalik-almadhi-234610235"><img class="logo" src="imgs/Linkedin-Icon.png"></a>
+                <a href="twitter.com"><img class="logo" src="imgs/X-Icon.png"></a>
+            </div>
+            <span><small>&copy; 2023 Abdulmalik Almadhi</small></span>
         </footer>
+        </div>
     </body>
+    
 </html>
