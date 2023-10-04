@@ -51,4 +51,9 @@
         font-size: 18px;
         border-radius: 12px;
     }
+
+    .logo {
+        width: 4%;
+        height: 4%;
+    }
 }
