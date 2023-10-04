@@ -56,4 +56,9 @@
         width: 4%;
         height: 4%;
     }
+
+    .choice > a {
+        font-size: 25px;
+        text-decoration: none;
+    }
 }
