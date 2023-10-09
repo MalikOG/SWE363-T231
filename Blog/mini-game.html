@@ -35,10 +35,22 @@
         .row {
             display: flex;
         }
+
+        #highlighted-cell {
+            background-color: blanchedalmond;
+        }
     </style>
 </head>
 
 <body>
+    <div class="Instructions">
+        <h2>Keyboard Controls</h2>
+        <p>Use <em>arrow keys</em> to move through the board</p> 
+        <p>Press <em>Enter</em> to click a cell</p>
+        <p>Press <em>r</em> to reset</p>
+    </div>
+
+
     <h1 id="turn">
         Now it's is <span>X</span> turn
     </h1>
@@ -71,7 +83,8 @@
     let winnser= 0
 
     // All cells
-    let cells = document.querySelectorAll('.cell')
+    let cells = Array.from(document.querySelectorAll('.cell'))
+    cells[4].setAttribute('id', 'highlighted-cell')
 
     // Win situations
     let winScenarios = [
@@ -88,6 +101,7 @@
     // when we click on a cell add the letter 
     let board = document.getElementsByClassName("board")[0]
     board.addEventListener("click", cellClicked)
+    document.addEventListener("keydown", keyboard)
 
     function cellClicked(event) {
         let cell = event.target
@@ -159,24 +173,72 @@
     }
 
     var resetButton = document.querySelector('#reset-button')
-    console.log(resetButton);
     resetButton.addEventListener('click', reset)
     function reset(event){
-        console.log('check')
         for (var i = 0; i < cells.length; i++) {
             cells[i].innerText = ''
-            console.log('check')
             cells[i].style.backgroundColor="beige"
+            cells[i].removeAttribute('id')
         }
         winner=null
         turn = 'X'
         gameEnded=false
+        cells[4].setAttribute('id', 'highlighted-cell')
+
         header = document.querySelector("#turn")
         header.innerHTML = "Now it's <span>X</span> turn"
         
     }
     }
     
+    function keyboard(event){
+        const currentCell=board.querySelector('#highlighted-cell')
+        const currentCellIdx = Array.from(cells).findIndex(cell => cell === currentCell);
+        const nCol=3
+        switch(event.key) {
+
+            case 'ArrowUp':
+                    if (currentCellIdx >=3){
+                        cells[currentCellIdx-nCol].setAttribute('id', "highlighted-cell")
+                        currentCell.removeAttribute('id')
+                        break
+                    }
+                case 'ArrowLeft':
+                    if (currentCellIdx > 0){
+                        cells[currentCellIdx-1].setAttribute('id', "highlighted-cell")
+                        currentCell.removeAttribute('id')
+                        break
+                    }
+                    else{
+                        break
+                    }
+                case 'ArrowDown':
+                    if (currentCellIdx <=5){
+                        cells[currentCellIdx + nCol].setAttribute('id', "highlighted-cell")
+                        currentCell.removeAttribute('id')
+                        break
+                    }
+                    else {
+                        break
+                    }
+                case 'ArrowRight':
+                    if (currentCellIdx <= 7){
+                        cells[currentCellIdx+1].setAttribute('id', "highlighted-cell")
+                        currentCell.removeAttribute('id')
+                        break
+                    }
+                    else {
+                        break
+                    }
+                case 'Enter':
+                    currentCell.click()
+                    break
+                case 'r':
+                    let resetButton = document.querySelector("#reset-button")
+                    resetButton.click()
+                    break
+        }
+    }
 </script>
 
 </html>
