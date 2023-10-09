@@ -32,6 +32,15 @@
             background-color: blanchedalmond;
         }
 
+        .cell-X {
+            background-color: #00B6EC;
+
+        }
+
+        .cell-O {
+            background-color: #FA9836;
+        }
+
         .row {
             display: flex;
         }
@@ -115,9 +124,9 @@
         } else {
             cell.innerText = turn
             if (turn == "X"){
-                cell.style.backgroundColor="#00B6EC"
+                cell.classList.add("cell-X")
             } else {
-                cell.style.backgroundColor="#FA9836"
+                cell.classList.add("cell-O")
             }
             
             // change turn
@@ -177,7 +186,8 @@
     function reset(event){
         for (var i = 0; i < cells.length; i++) {
             cells[i].innerText = ''
-            cells[i].style.backgroundColor="beige"
+            cells[i].removeAttribute("class")
+            cells[i].classList.add("cell")
             cells[i].removeAttribute('id')
         }
         winner=null
