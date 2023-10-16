@@ -8,8 +8,8 @@ class foxRetrieve{
 
 (async ()=> {
     for (i=0; i < 3; i++){
-        const res= await fetch("https://randomfox.ca/floof")
-        const data= await res.json()
+        let res= await fetch("https://randomfox.ca/floof")
+        let data= await res.json()
         populateImages(data)
     }
 })()
@@ -28,5 +28,4 @@ function populateImages(data){
     document.querySelector("#images").appendChild(div)
 
 }
-
 
