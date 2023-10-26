@@ -1,0 +1,21 @@
+#names, #body-text {
+    margin: 5px 5px 20px 5px;
+    padding: 5px 5px 5px 5px;
+    border: 2px solid #171717;
+    border-radius: 4px;
+    box-shadow: 10px 5px 5px #171717;
+    background-color: #f9f9f9;
+    box-sizing: border-box;
+}
+
+#personal-image-container {
+    display: flex;
+    justify-content: center;
+}
+
+#personal-image {
+    border-radius: 40%;
+    width: 150px;
+    height: 120px;
+    right: 50%;
+}

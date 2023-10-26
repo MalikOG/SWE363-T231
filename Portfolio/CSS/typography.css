@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css?family=DM+Sans');
+
+h1, h2, h3, h4, h5, h6, p, a {
+    font-family: "DM Sans";
+}
+
+#copyright {
+    font-size: 10px;
+}
+
+h1 {
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 112px; /* 116.667% */
+    letter-spacing: -1.5px;
+    color: #f9f9f9;
+}
+
+h2 {
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 72px; /* 120% */
+    letter-spacing: -0.5px;
+    color: #f9f9f9;
+}
+
+h3 {
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 56px; /* 116.667% */
+    color: #f9f9f9;
+}
+
+h4 {
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 36px; /* 105.882% */
+    color: #f9f9f9;
+}
+
+h5 {
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 100% */
+    letter-spacing: 0.18px;
+    color: #f9f9f9;
+}
+
+h6 {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px; /* 120% */
+    letter-spacing: 0.15px;
+    color: #f9f9f9;
+}
+
+a, em, p {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 150% */
+    letter-spacing: 0.5px;
+    color: #f9f9f9;
+}
+
+
+a, em {
+    color: #BB86FC;
+}

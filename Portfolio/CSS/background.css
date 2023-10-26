@@ -1,0 +1,39 @@
+html, body {
+    height: 100%;
+}
+
+body {
+    background-color: #35363a;
+    display: flex;
+    flex-direction: column;
+    color: #f9f9f9;
+}
+
+header {
+    margin: 15px 15px 15px 15px;
+}
+
+h1 {
+    text-transform: capitalize;
+}
+
+.home_main {
+    text-align: center;
+}
+
+#footer {
+    position: absolute;
+    height: 2.5rem;
+    bottom: 0;
+    left: 50%;
+}
+
+.logos {
+    display: inline-block;
+}
+
+.logo {
+    width: 32px;
+    height: 32px;
+    margin: 0px 5px 0px 5px;
+}
