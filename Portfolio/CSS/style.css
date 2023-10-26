@@ -19,3 +19,13 @@
     height: 120px;
     right: 50%;
 }
+
+.fox-div {
+    display: inline;
+    margin: 10px 10px 10px 10px;
+}
+
+.fox-image {
+    width: 120px;
+    height: 120px;
+}
