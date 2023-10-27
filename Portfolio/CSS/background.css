@@ -25,11 +25,9 @@ h1 {
 }
 
 #footer {
-    position: absolute;
-    height: 2rem;
-    bottom: 0;
-    left: 0; /* Adjust to left: 0 to align the footer to the left edge of the page */
-    right: 0; /* Add right: 0 to align the footer to the right edge of the page */
+    position: flex;
+    flex-direction: column;
+    justify-content: flex-end;
     text-align: center;
     margin: 20px;
 }
@@ -47,4 +45,12 @@ h1 {
 
 .logo:hover{
     transform: translateY(-5px);
+}
+
+.scene-container-off {
+    display: block;
+}
+
+.scene-container-off {
+    display: none;
 }
