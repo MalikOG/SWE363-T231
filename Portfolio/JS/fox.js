@@ -27,7 +27,6 @@ function populateImages(data){
 
     div.appendChild(img)
     document.querySelector("#images").appendChild(div)
-    
 }
 
 
