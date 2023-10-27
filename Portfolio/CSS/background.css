@@ -41,5 +41,10 @@ h1 {
 .logo {
     width: 32px;
     height: 32px;
-    margin: 0px 5px 0px 5px;
+    margin: 0px 2px 0px 5px;
+    transition: transform ease 0.4s 0s;
+}
+
+.logo:hover{
+    transform: translateY(-5px);
 }
