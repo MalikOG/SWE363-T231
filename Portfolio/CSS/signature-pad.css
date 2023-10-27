@@ -1,0 +1,27 @@
+#signature-pad-form {
+    max-width: 400px;
+    margin: auto;
+}
+
+#signature-pad {
+    border: 2px solid #171717;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+    cursor: crosshair;
+    text-align: center;
+}
+
+#clear-button {
+    margin: 0;
+    text-align: left;
+}
+
+#submit-button {
+    margin: auto;
+    padding: 5px;
+    border-radius: 4px;
+    border: none;
+    background-color: #f9f9f9;
+    color: #171717;
+    width: 120px;
+}
