@@ -7,11 +7,13 @@ class foxRetrieve{
 }
 
 (async ()=> {
-    for (i=0; i < 3; i++){
+    const dataList = []
+    for (i=0; i < 5; i++){
         const res= await fetch("https://randomfox.ca/floof")
         const data= await res.json()
-        populateImages(data)
+        dataList.push(data)
     }
+    populateImages(dataList)
 })()
 
 
@@ -26,10 +28,11 @@ const createImage = (data) =>{
     return [img, div]
 } 
 
-const populateImages = (data) => {
-    const [img, div]=createImage(data)
-    div.appendChild(img)
-    document.querySelector("#images").appendChild(div)
-}
+const populateImages = (dataList) => {
+    dataList.map((data) => {
+        [img, div] = createImage(data)
+        div.appendChild(img)
+        document.querySelector("#images").appendChild(div)
+    })}
 
 
