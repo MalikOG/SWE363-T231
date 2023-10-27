@@ -68,7 +68,7 @@ const handlePointerMove = (e) => {
 ctx.lineWidth=3
 ctx.lineJoin=ctx.lineCap="round"
 
-// Listener for pointer movement
+// Listener for pointer movement 
 canvas.addEventListener("pointerdown", handlePointerDown)
 canvas.addEventListener("pointerup", handlePointerUp)
 canvas.addEventListener("pointermove", handlePointerMove)
