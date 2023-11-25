@@ -9,6 +9,7 @@ body {
     display: flex;
     flex-direction: column;
     color: #f9f9f9;
+    margin-left: 10px;
 }
 
 header {
@@ -53,4 +54,10 @@ h1 {
 
 .scene-container-off {
     display: none;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

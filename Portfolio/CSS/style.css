@@ -29,3 +29,29 @@
     width: 120px;
     height: 120px;
 }
+
+button {
+    background-color: #35363a;
+    border: 2px solid #7B7AAC;
+    color: #7B7AAC;
+    border-radius: 9px;
+    box-shadow: none;
+    padding: 5px 5px 5px 5px;
+    margin: 10px 10px 10px 10px;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.suggestText {
+    background-color: #f9f9f9;
+    border: 2px solid #202123;
+    margin: 10px 10px 10px 10px;
+    color: #7B7AAC;
+    border-radius: 9px;
+    box-shadow: none;
+    padding: 5px 5px 5px 5px;
+}
+
+
