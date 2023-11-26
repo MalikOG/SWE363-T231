@@ -6,7 +6,7 @@ app.use("/CSS", express.static(__dirname + '/CSS'))
 app.use("/JS", express.static(__dirname + '/JS'))
 app.use("/img", express.static(__dirname + '/img'))
 app.use("/Logos", express.static(__dirname + '/Logos'))
-
+app.use(express.urlencoded({extended: false}))
 app.get('/', (req, res) => {
     res.status(202).sendFile(path.resolve(__dirname, 'HTML/frontpage.html'))
 })
@@ -21,6 +21,12 @@ app.get('/contact', (req, res) => {
 
 app.get('/suggest', (req, res) => {
     res.status(202).sendFile(path.resolve(__dirname, 'HTML/suggest.html'))
+})
+
+app.post('/suggest/processed', (req, res) => {
+    const {firstName, familyName, gender, email, resource} = req.body
+    console.log(req.body)
+    res.send("Process resolved")
 })
 
 app.get('/playground', (req, res) => {

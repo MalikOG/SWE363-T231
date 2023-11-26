@@ -27,17 +27,17 @@
 
     <main>
         <h1>Suggest Me</h1>
-        <form action="">
-            <input class="suggestText" type="text" autocomplete="given-name" placeholder="First Name">
+        <form action="/suggest/processed" method="POST">
+            <input class="suggestText" name="firstName" type="text" autocomplete="given-name" placeholder="First Name">
             <br>
-            <input class="suggestText" type="text" autocomplete="family-name" placeholder="Family Name">
+            <input class="suggestText" name="lastName" type="text" autocomplete="family-name" placeholder="Family Name">
             <br>
-            <label><input type="radio" value="Male">Male</label>
-            <label><input type="radio" value="Female">Female</label>
+            <label><input type="radio" name="male" value="Male">Male</label>
+            <label><input type="radio" name="female" value="Female">Female</label>
             <br>
-            <input class="suggestText" type="email" autocomplete="email" placeholder="EMAIL">  
+            <input class="suggestText" name="email" type="email" autocomplete="email" placeholder="EMAIL">  
             <br>
-            <input type="file" name="resource-file">
+            <input type="file" name="resourceFile">
             <br>
             <button type="submit">Submit</button>
         </form>
