@@ -76,7 +76,31 @@ a, em {
 }
 
 button {
-    font-size: 16px;
     font-weight: bold;
     font-family: "DM Sans";
+}
+
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 30px;
+        line-height: 50px;
+    }
+
+    h2 {
+        font-size: 25px;
+        line-height: 36px;
+    }
+    h3 {
+        font-size: 20px;
+        line-height: 28px;
+    }
+    h4 {
+        font-size: 16px;
+        line-height: 18px;
+    }
+    
+    a, em, p button{
+        font-size: 10px;
+        line-height: 14px; 
+    }
 }

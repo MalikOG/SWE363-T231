@@ -7,6 +7,8 @@ app.use("/JS", express.static(__dirname + '/JS'))
 app.use("/img", express.static(__dirname + '/img'))
 app.use("/Logos", express.static(__dirname + '/Logos'))
 app.use(express.urlencoded({extended: false}))
+
+
 app.get('/', (req, res) => {
     res.status(202).sendFile(path.resolve(__dirname, 'HTML/frontpage.html'))
 })
@@ -39,5 +41,5 @@ app.all('*', (req, res) => {
 })
 
 app.listen(5001, () => {
-    console.log()
-})
+    console.log(`Listening at port 5001...`)
+  })

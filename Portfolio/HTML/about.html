@@ -10,15 +10,19 @@
     <title>Contact me</title>
 </head>
 <body>
-    <header id="header">
-        <nav>
-            <ul>
-                <li><a href="/" class="nav-link">Home</a></li>
-                <li><a href="/about" class="nav-link">About</a></li>
-                <li><a href="/contact" class="nav-link">Contact</a></li>
-                <li><a href="/suggest" class="nav-link">Suggestions</a></li>
-                <li><a href="/playground" class="nav-link">Playground</a></li>
-            </ul>
+    <header class="header">
+
+        <input type="checkbox" id="check">
+        <label for="check" class="icons">
+            <i class="bx bx-menu" id="menu-icon"></i>
+            <i class="bx bx-x" id="close-icon"></i>
+        </label>    
+        <nav class="nav-bar">
+            <a href="/" style="--i:0">Home</a>
+            <a href="/about" style="--i:1">About</a>
+            <a href="/contact" style="--i:2">Contact</a>
+            <a href="/suggest" style="--i:3">Suggestions</a>
+            <a href="/playground" style="--i:4">Playground</a>
         </nav>
     </header>
     <main>
@@ -36,13 +40,13 @@
         </p>
 
     </main>
-    <footer id="footer">
+    <div class="footer">
         <div class="logos">
             <a href="twitter.com"><img src="../Logos/twitter.png" alt="Twitter logo" class="logo"></a>
             <a href="linkedin.com"><img src="../Logos/linkedin.png" alt="Linkedin logo" class="logo"></a>
             <a href="github.com"><img src="../Logos/github.png" alt="Github logo" class="logo"></a>
         </div>
         <p id="copyright">&copy; Abdulmalik Mishari Almadhi</p>
-    </footer>
+    </div>
 </body>
 </html>

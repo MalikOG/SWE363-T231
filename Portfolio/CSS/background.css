@@ -9,26 +9,22 @@ body {
     display: flex;
     flex-direction: column;
     color: #f9f9f9;
-    margin-left: 10px;
 }
 
-header {
-    margin: 15px 15px 15px 15px;
+main{
+    margin-left: 10px;
+    position: relative;
+    top:50px
 }
 
 h1 {
     text-transform: capitalize;
 }
 
-.home_main {
-    flex: 1;
-    padding:20px;
-}
-
-#footer {
-    position: flex;
-    flex-direction: column;
-    justify-content: flex-end;
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
     text-align: center;
     margin: 20px;
 }
