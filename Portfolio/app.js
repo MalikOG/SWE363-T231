@@ -28,7 +28,7 @@ function authentication(req, res, next) {
     const user = auth[0]
     const pass = auth[1]
  
-    if (user == 'admin' && pass == 'password') {
+    if (user == 'admin' && pass == 'passwords') {
  
         // If Authorized user
         next()
